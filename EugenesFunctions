@@ -1,0 +1,13 @@
+#the code necessary for Wikipedia Images to run
+#copy and paste into python file called "EugenesFunctions"
+
+class eugURL:
+    def __init__(self, URL):
+        self.URL = URL
+    
+    def check(self, arg):
+        self.arg = arg
+        URLsuffix = self.URL[len(self.URL)-len(arg):len(self.URL)]
+        if URLsuffix == self.arg:
+            return True
+        return False
